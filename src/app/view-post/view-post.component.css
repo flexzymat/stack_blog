@@ -1,0 +1,22 @@
+
+.main-view-container{
+    display: flex;
+    justify-content: center;
+}
+.card-container {
+    width: 90%;
+    padding: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.card{
+    width: 80rem;
+    padding: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}

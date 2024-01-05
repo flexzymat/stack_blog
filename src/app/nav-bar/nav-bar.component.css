@@ -1,0 +1,17 @@
+/* nav, .navbar{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.mat-toolbar{
+    background-color: blue;
+    padding: 16px;
+}
+.badge{
+    color: white ;
+    font-size: large;
+    cursor: pointer;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }

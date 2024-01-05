@@ -1,0 +1,14 @@
+.title{
+    color: blue;
+    text-decoration: underline;
+}
+.list-main-container{
+    margin-top: 50px;
+}
+.card-container{
+    margin: auto;
+    width: 65%;
+    position: relative;
+    padding: 20px;
+}
+
