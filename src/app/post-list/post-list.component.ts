@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,20 +8,26 @@ import { Router } from '@angular/router';
 })
 export class PostListComponent {
 [x: string]: any;
-
+searchTitle:any;
   blogPost=[
-    {title: 'title1', content: 'first content ...', date: '2/12/2024' },
-    {title: 'title2', content: 'first content ...', date: '2/12/2024' },
-    {title: 'title3', content: 'first content ...', date: '2/12/2024' },
-    {title: 'title4', content: 'first content ...', date: '2/12/2024' },
+    {title: 'About food', content: 'i love food that is tasty ...', date: '1/02/2021' },
+    {title: 'Programming', content: 'programming is awesome ...', date: '2/03/2022' },
+    {title: 'Lovely profession', content: 'i am a proud teacher ...', date: '3/04/2023' },
+    {title: 'Magnificient God', content: 'i cant love God less ...', date: '4/05/2024' },
   ]
   
   constructor(private router: Router) { }
-
+  
   ngOnInit(): void {
-
+   
   }
+  
   viewPost(){
   this.router.navigate(['/view-post'])
   }
+
+ 
+
 }
+
+

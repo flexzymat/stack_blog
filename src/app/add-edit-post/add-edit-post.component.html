@@ -1,10 +1,34 @@
 <!-- <p>add-edit-post works!</p> -->
-
-<div>
-    <h6 mat-dialog-title>Title</h6>
-</div>
-<div mat-dialog-content>Content</div>
-<div mat-dialog-actions>
-    <button mat-raised-button>Send</button>
-    <button mat-raised-button>Cancel</button>
+<div class="main-modal-div">
+    <div class="modal-div">
+        <div>
+            <h6 class="modal-heading" mat-dialog-title>Create Post</h6>
+        </div>
+        <div mat-dialog-content>
+            <div class="mb-3">
+                <div>
+                    <label class=title for="">Title</label>
+                </div>
+                <div>
+                    <input placeholder="input blog title" class="text" type="text">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label class="content" for="">Content</label>
+                </div>
+                <div>
+                    <textarea placeholder="what's your thoughts" class="text-area" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="main-btn-div" mat-dialog-actions>
+           <div class="send-btn-div">
+            <button class="send-btn" mat-raised-button>Send</button>
+           </div>&nbsp;
+           <div class="cancel-btn-div">
+            <button class="cancel-btn" mat-raised-button>Cancel</button>
+           </div>
+        </div>
+    </div>
 </div>

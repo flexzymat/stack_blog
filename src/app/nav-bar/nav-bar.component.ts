@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AddEditPostComponent } from '../add-edit-post/add-edit-post.component';
+import { Dialog } from '@angular/cdk/dialog';
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,11 +11,18 @@ import { AddEditPostComponent } from '../add-edit-post/add-edit-post.component';
 })
 export class NavBarComponent {
 
-  constructor(private router: Router,private _dialog: MatDialog ) {}
+  constructor(private _dialog: MatDialog, private router: Router) {}
+ 
  
 
   addEditPost(){
-    this._dialog.open(AddEditPostComponent)
+    const dialogRef = this._dialog.open(AddEditPostComponent, {
+      width: '500px'
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+    });
+   
   }
   
 

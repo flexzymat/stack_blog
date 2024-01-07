@@ -12,6 +12,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { AddEditPostComponent } from './add-edit-post/add-edit-post.component';
 import { MatDialogModule} from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { MatDialogModule} from '@angular/material/dialog';
     NavBarComponent,
     PostListComponent,
     ViewPostComponent,
-    AddEditPostComponent
+    AddEditPostComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { MatDialogModule} from '@angular/material/dialog';
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
