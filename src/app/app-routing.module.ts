@@ -6,7 +6,7 @@ import { ViewPostComponent } from './view-post/view-post.component';
 const routes: Routes = [ 
   {path: 'post-list', component: PostListComponent},
   {path:'', redirectTo: '/post-list', pathMatch: 'full'},
-  {path: 'view-post', component: ViewPostComponent},
+  {path: 'view-post/:id', component: ViewPostComponent},
 ];
  
 @NgModule({

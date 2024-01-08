@@ -1,27 +1,49 @@
-# StackBlog
+PROJECT TITLE:
+creating, updating and deleting blog post
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+PROJECT DESCRIPTION:
+This project involves creating a platform where users can create a post, search for the post by title and view the post. Posts can also be updated and and deleted by the users. 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+KEY FEATURES:
 
-## Code scaffolding
+*The navigation bar has two features, the blog name on the left side which when linked can take the user to the post list page and on the right hand side has the white button for opening the modal for sending post.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*The modal contains input fields where user can input the post title and also a text area where user can type in there post. A send button for sending the post and the cancel button. 
 
-## Build
+*The main page contains search bar for searching for post by title of post which filters off the various lists of post with title, and date of post based on the user input. when the list is licked, it takes the user to the view page. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+*The view page where users can see the the full post of the blog title clicked from the main post list page.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+HOW TO START UP THE ANGULAR APPLICATION LOCALLY:
+*clone the stack_blog project from the reporitory and save it in your workspace
+*Install node with the angular Cli using : npm install
+*using the angular Cli, navigate to the project directory using the command: $ cd moviez-hub
+* run "ng serve" after navigation to the project folder to start the local server.  
+when the server is set up, u can open the browser to view the app and its functionality.
 
-## Running end-to-end tests
+HOW TO START UP AND RUN THE EXPRESS SERVER LOCALLY:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+*Clone the stack_blog_server from the git hub repo.
+To start up the server and connect to database, run the command : "npm run devStart"
 
-## Further help
+TOOLS USED:
+*Angular
+*Node.js
+*Express.js
+*Mongo db
+*cors
+*Bootstrap
+*Angular material
+*Netlify
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+REQIREMENTS:
+*Node.js
+*comand prompt
+*windows or MAC.
+
+Thanks for going through it. your contributions to the application's improvement will be greatly appreciated.  
+
+
+

@@ -1,0 +1,42 @@
+.title{
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+.content{
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+
+.main-modal-div{
+    background-color: papayawhip;
+    
+}
+.modal-div{
+    margin: auto;
+}
+::placeholder{
+    font-size: small;
+}
+.text-area{
+    width: 100%;
+}
+.modal-heading{
+    color: blue
+}
+.main-btn-div{
+    display: flex;
+    justify-content: center;
+}
+.send-btn{
+    background-color: blue;
+    color: white;
+}
+.cancel-btn{
+    background-color: red;
+    color: white;
+}
+button{
+    padding: 0 70px;
+}

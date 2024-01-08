@@ -3,12 +3,17 @@
     <div class="card-container">
         <div class="card">
             <div class="card-body">
-                <p>Title</p>
-                <div class="view-content">
-                    <p>content</p>
+               <h1>
+                <p class="title">{{blogData?.title}}</p>
+               </h1>
+                <div class="view-comment">
+                    <p>{{blogData?.comment}}</p>
                 </div>
             </div>
-        </div>    
+            <div class="btn">
+                <button (click)="EditPost()" class="btn bg-primary">Edit Post</button>
+            </div>
+        </div>  
     </div>
 </div>
 

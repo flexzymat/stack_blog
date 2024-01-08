@@ -14,6 +14,9 @@ import { AddEditPostComponent } from './add-edit-post/add-edit-post.component';
 import { MatDialogModule} from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule} from 'ngx-pagination';
+import { EditPostComponent } from './edit-post/edit-post.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { FilterPipe } from './filter.pipe';
     PostListComponent,
     ViewPostComponent,
     AddEditPostComponent,
-    FilterPipe
+    FilterPipe,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,8 @@ import { FilterPipe } from './filter.pipe';
     MatButtonModule,
     MatDialogModule,
     FormsModule,
+    HttpClientModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

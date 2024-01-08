@@ -1,33 +1,47 @@
-import { Component, Output } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { BlogService } from '../blog.service';
 
 @Component({
   selector: 'app-post-list',
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.css']
 })
-export class PostListComponent {
+export class PostListComponent implements OnInit {
+page: any = 1;
+pageSize: any = 10;
+count: any;
 [x: string]: any;
 searchTitle:any;
-  blogPost=[
-    {title: 'About food', content: 'i love food that is tasty ...', date: '1/02/2021' },
-    {title: 'Programming', content: 'programming is awesome ...', date: '2/03/2022' },
-    {title: 'Lovely profession', content: 'i am a proud teacher ...', date: '3/04/2023' },
-    {title: 'Magnificient God', content: 'i cant love God less ...', date: '4/05/2024' },
-  ]
+  blogPost=[];
   
-  constructor(private router: Router) { }
+  constructor(private router: Router,private bs: BlogService) { }
   
   ngOnInit(): void {
-   
+   this.getBlog()
   }
   
-  viewPost(){
-  this.router.navigate(['/view-post'])
+  viewPost(id:any){
+    this.router.navigate([`/view-post/${id}`])
   }
 
+  getBlog() {  
+  
+    this.bs.getBlog().subscribe({
+      next: (res:any)=> {
+        console.log(res);
+        this.blogPost = res
+      },
+      error: (err:any)=> {
+        console.log(err); 
+      }
+    })
+  }
  
-
+  changePage(page:any){
+    this.page = page
+    this.getBlog()
+   }
 }
 
 

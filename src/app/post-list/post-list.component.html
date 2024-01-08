@@ -6,14 +6,21 @@
 
     <div class="list-main-container">
         <div class="card-container">
-            <div *ngFor="let post of blogPost|filter:searchTitle">
+            <div *ngFor="let post of blogPost|filter:searchTitle | paginate: {
+                itemsPerPage: pageSize,
+                currentPage: page,
+                totalItems: count,
+            }">
                 <div class="card">
-                    <div class="card-body" (click)="viewPost()">
+                    <div class="card-body" (click)="viewPost(post._id)">
                         <h6 class="title">{{post.title}}</h6>
-                        <p class="content">{{post.content}}</p>
+                        <p class="content">{{post.comment}}</p>
                         <div class="time">{{post.date}}</div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="pagination-div">
+        <pagination-controls (pageChange)="changePage(page = $event)"></pagination-controls>
     </div>
