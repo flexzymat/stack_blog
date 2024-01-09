@@ -15,7 +15,7 @@
             </div>
             <div>
                 <div>
-                    <label class="content" for="">Content</label>
+                    <label class="content" for="">comment</label>
                 </div>
                 <div>
                     <textarea placeholder="what's your thoughts" [(ngModel)]="model.comment" class="text-area" name="" id="" cols="30" rows="10"></textarea>
@@ -24,10 +24,10 @@
         </div>
         <div class="main-btn-div" mat-dialog-actions>
            <div class="send-btn-div">
-            <button class="send-btn" mat-raised-button (click)="submit()">Send</button>
+            <button class="send-btn" mat-raised-button (click)="submit()" [ngClass]="data==null?'send-btn':'edit-btn'">{{data==null?'Send':'Save'}}</button>
            </div>&nbsp;
            <div class="cancel-btn-div">
-            <button class="cancel-btn" mat-raised-button>Cancel</button>
+            <button class="cancel-btn" (click)="onClose()" mat-raised-button>Cancel</button>
            </div>
         </div>
     </div>

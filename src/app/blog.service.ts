@@ -23,9 +23,13 @@ export class BlogService {
     const apiUrl = `${this.url}/${id}`;
     return this.http.get<any>(apiUrl);
   }
-  editBlog(id:any): Observable<any> {    
+  editBlog(data: any,id:any): Observable<any> {    
     const apiUrl = `${this.url}/${id}`;
-    return this.http.patch<any>(apiUrl,{});
+    return this.http.patch<any>(apiUrl,data);
+  }
+  deleteBlog(id:any): Observable<any> {    
+    const apiUrl = `${this.url}/${id}`;
+    return this.http.delete<any>(apiUrl);
   }
   getBlog(): Observable<any> {    
     const apiUrl =` ${this.url}`;

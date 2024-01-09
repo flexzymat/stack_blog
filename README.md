@@ -1,5 +1,6 @@
 PROJECT TITLE:
-creating, updating and deleting blog post
+
+Creating, Reading, Updating and deleting blog post.
 
 PROJECT DESCRIPTION:
 This project involves creating a platform where users can create a post, search for the post by title and view the post. Posts can also be updated and and deleted by the users. 
@@ -17,6 +18,7 @@ KEY FEATURES:
 
 
 HOW TO START UP THE ANGULAR APPLICATION LOCALLY:
+
 *clone the stack_blog project from the reporitory and save it in your workspace
 *Install node with the angular Cli using : npm install
 *using the angular Cli, navigate to the project directory using the command: $ cd moviez-hub
@@ -26,9 +28,18 @@ when the server is set up, u can open the browser to view the app and its functi
 HOW TO START UP AND RUN THE EXPRESS SERVER LOCALLY:
 
 *Clone the stack_blog_server from the git hub repo.
+
+*Add the .env file which contains the urls and the dataBase to connect to the express and nodejs server.
+The DATABASE will be send to you if u request for testing the functionality. THANKS.
 To start up the server and connect to database, run the command : "npm run devStart"
 
+
+NOTE: DEPLOYMENT WAS NOT POSSIBLE BECAUSE THE NETLIFY DOES NOT SUPPORT THE CORS THAT WAS USED AS PART OF THE SERVER TO CONNECT THE EXPRESS SERVER AND THE MONDO DB. 
+
+*NODE JS WAS USED TO CREAT THE API SINCE THE DUMMY API COULD NOT PERFORM A POST REQUEST CAUSING A DELAY IN EXCUTING THE PROJECT.
+
 TOOLS USED:
+
 *Angular
 *Node.js
 *Express.js
@@ -36,9 +47,10 @@ TOOLS USED:
 *cors
 *Bootstrap
 *Angular material
-*Netlify
+
 
 REQIREMENTS:
+
 *Node.js
 *comand prompt
 *windows or MAC.
